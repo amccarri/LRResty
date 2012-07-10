@@ -15,7 +15,7 @@
 		A30878A5120C44FF003859AC /* RemoteRepositoryExample.h in Headers */ = {isa = PBXBuildFile; fileRef = A30878A3120C44FF003859AC /* RemoteRepositoryExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A311467713A2685900F09315 /* DeleteResourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A311467613A2685900F09315 /* DeleteResourceTests.m */; };
 		A322549F13B6C93900F16A97 /* LRRestyResponse+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A322549E13B6C93900F16A97 /* LRRestyResponse+Internal.h */; settings = {ATTRIBUTES = (); }; };
-		A32254A113B6C9FA00F16A97 /* LRRestyResponse+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A322549E13B6C93900F16A97 /* LRRestyResponse+Internal.h */; };
+		A32254A113B6C9FA00F16A97 /* LRRestyResponse+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A322549E13B6C93900F16A97 /* LRRestyResponse+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3236DC8120C5C0100001E40 /* ExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3087956120C489C003859AC /* ExampleAppDelegate.m */; };
 		A3236DC9120C5C0100001E40 /* ExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3087965120C48EE003859AC /* ExamplesViewController.m */; };
 		A3236DCA120C5C0100001E40 /* RemoteRepositoryExample.m in Sources */ = {isa = PBXBuildFile; fileRef = A30878A4120C44FF003859AC /* RemoteRepositoryExample.m */; };
@@ -1470,6 +1470,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = LRResty;
+				PUBLIC_HEADERS_FOLDER_PATH = include/LRResty/;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1491,6 +1492,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = LRResty;
+				PUBLIC_HEADERS_FOLDER_PATH = include/LRResty/;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1513,6 +1515,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1531,6 +1534,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
